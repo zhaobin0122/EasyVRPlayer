@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 415f77ae698d34541bd39abdb01f83f7
+timeCreated: 1531890240
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: AppButton
+    100002: AppButton_Press
+    100004: Body
+    100006: BumperKey
+    100008: BumperKey_Press
+    100010: HomeButton
+    100012: HomeButton_Press
+    100014: //RootNode
+    100016: TouchPad
+    100018: TouchPad_Press
+    100020: VolumeKey
+    100022: VolumeKey_Press
+    400000: AppButton
+    400002: AppButton_Press
+    400004: Body
+    400006: BumperKey
+    400008: BumperKey_Press
+    400010: HomeButton
+    400012: HomeButton_Press
+    400014: //RootNode
+    400016: TouchPad
+    400018: TouchPad_Press
+    400020: VolumeKey
+    400022: VolumeKey_Press
+    2300000: AppButton
+    2300002: AppButton_Press
+    2300004: Body
+    2300006: BumperKey
+    2300008: BumperKey_Press
+    2300010: HomeButton
+    2300012: HomeButton_Press
+    2300014: TouchPad
+    2300016: TouchPad_Press
+    2300018: VolumeKey
+    2300020: VolumeKey_Press
+    3300000: AppButton
+    3300002: AppButton_Press
+    3300004: Body
+    3300006: BumperKey
+    3300008: BumperKey_Press
+    3300010: HomeButton
+    3300012: HomeButton_Press
+    3300014: TouchPad
+    3300016: TouchPad_Press
+    3300018: VolumeKey
+    3300020: VolumeKey_Press
+    4300000: HomeButton
+    4300002: AppButton
+    4300004: TouchPad
+    4300006: VolumeKey
+    4300008: BumperKey
+    4300010: Body
+    4300012: BumperKey_Press
+    4300014: HomeButton_Press
+    4300016: AppButton_Press
+    4300018: TouchPad_Press
+    4300020: VolumeKey_Press
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

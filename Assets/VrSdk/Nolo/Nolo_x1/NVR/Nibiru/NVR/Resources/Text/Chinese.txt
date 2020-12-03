@@ -1,0 +1,25 @@
+﻿decibel_value=当前分贝值:
+voice_status_default=未检测到说话
+voice_status_start=检测到开始说话
+voice_status_finish=检测到结束说话，开始识别
+voice_status_result=识别结果为：
+voice_status_error=识别错误，语音过低或过长
+voice_tip_content=其中"小妮你好"是唤醒词，纯粹用于唤醒语音识别。\n之后说的话需要依靠在线识别得出结果。\n若结果在代码中有定义，则执行相应逻辑\n（如此demo定义了“向右移动”对应的逻辑）。
+voice_say_content=请说"小妮你好,向右移动"
+voice_say_content_left=请说"小妮你好,向左移动"
+voice_say_content_volume=请直接说"增大音量"
+voice_tip_content_v="增大音量"是SDK预定义逻辑的唤醒词\n（无需先说"小妮你好"），识别结果与之完全匹配时，\n自动执行对应逻辑，无需开发者在代码中定义。\n预定义唤醒词提高了一些常用操作的语音交互\n效率，请阅读文档了解有哪些预定义唤醒词。
+next_demo_text=下一示例
+last_demo_text=上一示例
+start_rec=开始录音
+stop_rec=停止录音
+voice_status_cancel=取消识别
+api_desc=这是一个调接口执行语音识别的示例，\n详细的接口说明请查看开发文档\n除唤醒词和调用接口方式外，还可用设备的语音键触发。\n具体可查看开关文档中的Hardware Guide，\n不同型号设备定义的语音键可能不同\n（也可能没有语音键）
+voice_say_content_2=按下说“向右移动”
+voice_say_content_3=说完请松开
+remindbox_lower_power=当前电量过低
+remindbox_nkey_tip=长按N键校准后开始使用
+remindbox_shutdown=关机
+remindbox_reboot=重启
+
+

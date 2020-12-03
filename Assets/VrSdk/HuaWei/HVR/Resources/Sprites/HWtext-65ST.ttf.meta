@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: dd4eaa146979e484cb69d768b1b2e9bf
+timeCreated: 1571474385
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 0
+  fontName: HYQiHei
+  fontNames:
+  - HYQiHei
+  - HWtext 65ST
+  - Droid Sans Fallback
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

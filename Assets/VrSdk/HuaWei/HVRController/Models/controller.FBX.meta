@@ -1,0 +1,109 @@
+fileFormatVersion: 2
+guid: 24da0ab903b74284dba72aeac72a89e6
+timeCreated: 1568788813
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: b_lqefAEGRG
+    100002: b_rasgfwe
+    100004: c_bfad
+    100006: c_fasd
+    100008: c_tadafa
+    100010: //RootNode
+    100012: v_madf
+    400000: b_lqefAEGRG
+    400002: b_rasgfwe
+    400004: c_bfad
+    400006: c_fasd
+    400008: c_tadafa
+    400010: //RootNode
+    400012: v_madf
+    2300000: b_lqefAEGRG
+    2300002: b_rasgfwe
+    2300004: c_bfad
+    2300006: c_fasd
+    2300008: c_tadafa
+    2300010: v_madf
+    3300000: b_lqefAEGRG
+    3300002: b_rasgfwe
+    3300004: c_bfad
+    3300006: c_fasd
+    3300008: c_tadafa
+    3300010: v_madf
+    4300000: c_tadafa
+    4300002: c_bfad
+    4300004: c_fasd
+    4300006: v_madf
+    4300008: b_rasgfwe
+    4300010: b_lqefAEGRG
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

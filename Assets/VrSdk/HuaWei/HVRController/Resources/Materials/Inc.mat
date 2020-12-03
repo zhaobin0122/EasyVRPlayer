@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Inc
+  m_Shader: {fileID: 4800000, guid: 849094d8f34766c429080f6591dd2b23, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_CustomRenderQueue: 4500
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: <noninit>
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 68e605e9350245148b8947265df19571, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTexture
+      second:
+        m_Texture: {fileID: 2800000, guid: 62330afa191f26344a3d973587e29e6c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: <noninit>
+      second: 0
+    - first:
+        name: _AlphaScale
+      second: 1
+    - first:
+        name: _Gloss
+      second: 8
+    - first:
+        name: _Range
+      second: 2.3
+    - first:
+        name: _RangeColor
+      second: 2.46
+    m_Colors:
+    - first:
+        name: <noninit>
+      second: {r: 0, g: 1.3638793e-34, b: 0, a: 1.3638719e-34}
+    - first:
+        name: _Color
+      second: {r: 0.5294118, g: 0.5294118, b: 0.5294118, a: 1}
+    - first:
+        name: _Specular
+      second: {r: 0.007352948, g: 0.007352948, b: 0.007352948, a: 1}

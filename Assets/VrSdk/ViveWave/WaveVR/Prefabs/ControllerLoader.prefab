@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1962041164266716}
+  m_IsPrefabParent: 1
+--- !u!1 &1962041164266716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4575283832211176}
+  - component: {fileID: 114214961028118876}
+  m_Layer: 0
+  m_Name: ControllerLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4575283832211176
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962041164266716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114214961028118876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962041164266716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44840173158e1b54fa39bace0f5b2ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WhichHand: 0
+  ControllerComponents: 1
+  TrackPosition: 1
+  SimulationOption: 0
+  FollowHead: 0
+  TrackRotation: 1
+  overwriteIndicatorSettings: 1
+  showIndicator: 0
+  hideIndicatorByRoll: 1
+  basedOnEmitter: 1
+  showIndicatorAngle: 30
+  lineLength: 0.03
+  lineStartWidth: 0.0004
+  lineEndWidth: 0.0004
+  lineColor: {r: 1, g: 1, b: 1, a: 1}
+  textCharacterSize: 0.08
+  zhCharactarSize: 0.07
+  textFontSize: 100
+  textColor: {r: 1, g: 1, b: 1, a: 1}
+  useIndicatorSystemConfig: 1
+  buttonIndicationList: []
+  adaptiveLoading: 1
+  enableEmitter: 1
+  sendEvent: 1
+  enableButtonEffect: 1
+  useEffectSystemConfig: 1
+  buttonEffectColor:
+    serializedVersion: 2
+    rgba: 4293112576
+  ShowBeam: 1
+  useBeamSystemConfig: 1
+  updateEveryFrame: 0
+  StartWidth: 0.000625
+  EndWidth: 0.00125
+  StartOffset: 0.015
+  EndOffset: 0.8
+  StartColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  EndColor:
+    serializedVersion: 2
+    rgba: 1308622847
+  useDefaultMaterial: 1
+  customMat: {fileID: 0}
+  showPointer: 1
+  useCtrPointerSystemConfig: 1
+  blink: 0
+  UseDefaultTexture: 1
+  customTexture: {fileID: 0}
+  PointerOuterDiameterMin: 0.01

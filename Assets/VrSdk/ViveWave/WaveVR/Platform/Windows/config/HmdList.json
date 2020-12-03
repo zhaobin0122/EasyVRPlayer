@@ -1,0 +1,188 @@
+[
+  {
+   "DeviceName" : "FOCUS",
+   "Response": 
+   [
+      {
+        "MainRequest" : 32784,
+        "SubRequest" : 1001,
+        "index" : 0 ,
+        "Value" : "AIO MN"
+      },
+      {
+        "MainRequest" : 32784,
+        "SubRequest" : 1001,
+        "index" : 1 ,
+        "Value" : "AIO MN"
+      },
+      {
+        "MainRequest" : 32784,
+        "SubRequest" : 1001,
+        "index" : 2 ,
+        "Value" : "AIO MN"
+      },
+      {  
+        "MainRequest" : 32784,
+        "SubRequest" : 1003,
+        "index" : 0 , 
+        "Value" : "generic_hmd"
+      },
+      {  
+        "MainRequest" : 32784,
+        "SubRequest" : 1003,
+        "index" : 1 , 
+        "Value" : "vr_controller_vive_1_5"
+      }, 
+      {  
+        "MainRequest" : 32784,
+        "SubRequest" : 1003,
+        "index" : 2 , 
+        "Value" : "vr_controller_vive_1_5"
+      }, 
+      {  
+        "MainRequest" : 32785,
+        "SubRequest" : 1025,
+        "index" : -1 ,
+        "Value" : 1
+      },
+      {  
+        "MainRequest" : 32786,
+        "SubRequest" : 2011,
+        "index" : -1 ,
+        "Value" : 53794
+      },  
+      {  
+        "MainRequest" : 32786,
+        "SubRequest" : 2015,
+        "index" : -1 ,
+        "Value" : 43521
+      },
+      {  
+        "MainRequest" : 32787,
+        "SubRequest" : 2003,
+        "index" : -1 ,
+        "Value" : 0.0605
+      },
+      {  
+        "MainRequest" : 32787,
+        "SubRequest" : 2026,
+        "index" : -1 ,
+        "Value" : 0.00
+      },  
+      {  
+        "MainRequest" : 32787,
+        "SubRequest" : 2001,
+        "index" : -1 ,
+        "Value" : 0.0065
+      },  
+      {  
+        "MainRequest" : 32800,
+        "SubRequest" : 2001,
+        "index" : -1 ,
+        "Value" : [0,0,2880,1600]
+      },  
+      {  
+        "MainRequest" : 32801,
+        "SubRequest" : -1,
+        "index" : -1 ,
+        "Value" : [1440,1600]
+      }
+    ]  
+  },
+  {
+   "DeviceName" : "COSMOS",
+   "Response": 
+   [
+      {
+        "MainRequest" : 32784,
+        "SubRequest" : 1001,
+        "index" : 0 ,
+        "Value" : "AIO MN"
+      },
+      {
+        "MainRequest" : 32784,
+        "SubRequest" : 1001,
+        "index" : 1 ,
+        "Value" : "AIO MN"
+      },
+      {
+        "MainRequest" : 32784,
+        "SubRequest" : 1001,
+        "index" : 2 ,
+        "Value" : "AIO MN"
+      },
+      {  
+        "MainRequest" : 32784,
+        "SubRequest" : 1003,
+        "index" : 0 , 
+        "Value" : "generic_hmd"
+      },
+      {  
+        "MainRequest" : 32784,
+        "SubRequest" : 1003,
+        "index" : 1 , 
+        "Value" : "vr_controller_vive_1_5"
+      }, 
+      {  
+        "MainRequest" : 32784,
+        "SubRequest" : 1003,
+        "index" : 2 , 
+        "Value" : "vr_controller_vive_1_5"
+      },
+	  {  
+        "MainRequest" : 32786,
+        "SubRequest" : 3007,
+        "index" : 1 , 
+        "Value" : 1
+      }, 
+      {  
+        "MainRequest" : 32786,
+        "SubRequest" : 3007,
+        "index" : 2 , 
+        "Value" : 2
+      },
+      {  
+        "MainRequest" : 32785,
+        "SubRequest" : 1025,
+        "index" : -1 ,
+        "Value" : 1
+      },
+      {  
+        "MainRequest" : 32786,
+        "SubRequest" : 2011,
+        "index" : -1 ,
+        "Value" : 53794
+      },  
+      {  
+        "MainRequest" : 32786,
+        "SubRequest" : 2015,
+        "index" : -1 ,
+        "Value" : 43521
+      },
+      {  
+        "MainRequest" : 32787,
+        "SubRequest" : 2026,
+        "index" : -1 ,
+        "Value" : 0.00
+      },  
+      {  
+        "MainRequest" : 32787,
+        "SubRequest" : 2001,
+        "index" : -1 ,
+        "Value" : 0.0065
+      },  
+      {  
+        "MainRequest" : 32800,
+        "SubRequest" : 2001,
+        "index" : -1 ,
+        "Value" : [0,0,2880,1700]
+      },  
+      {  
+        "MainRequest" : 32801,
+        "SubRequest" : -1,
+        "index" : -1 ,
+        "Value" : [1440,1700]
+      }
+    ]  
+  }
+]

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zb.inkeVrSdk"
+    android:installLocation="preferExternal">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+  <!--===========================华为===========================-->
+  <!--===========================start===========================-->
+  <uses-permission android:name="com.huawei.android.permission.VR" />
+  <uses-permission android:name="com.huawei.vrhandle.permission.DEVICE_MANAGER" />
+  <!--===========================华为===========================-->
+  <!--===========================end===========================-->
+
+  <!--===========================ViveWave===========================-->
+  <!--===========================start==============================-->
+  <uses-permission android:name="vive.wave.vr.oem.data.OEMDataRead" />
+  <uses-permission android:name="vive.wave.vr.oem.data.OEMDataWrite" />
+  <!--===========================ViveWave===========================-->
+  <!--===========================end==============================-->
+
+  <!--===========================nolo===============================-->
+  <!--===========================start==============================-->
+  <uses-feature android:name="android.hardware.usb.host" />
+
+  <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+  <uses-permission android:name="nolo.permission.ACCESS_SERVER" />
+  <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+  <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.GET_TASKS" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <!--===========================nolo===============================-->
+  <!--===========================end================================-->
+
+  <supports-screens
+      android:anyDensity="true"
+      android:largeScreens="true"
+      android:normalScreens="true"
+      android:smallScreens="true"
+      android:xlargeScreens="true" />
+
+  <application
+      android:allowBackup="false"
+      android:banner="@drawable/app_banner"
+      android:description="@string/app_name"
+      android:enabled="true"
+      android:extractNativeLibs="true"
+      android:icon="@drawable/app_banner"
+      android:isGame="true"
+      android:label="@string/app_name"
+      android:largeHeap="true"
+      android:resizeableActivity="true"
+      android:supportsRtl="true"
+      android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+      tools:ignore="GoogleAppIndexingWarning"
+      tools:replace="android:allowBackup,android:theme,android:label">
+
+    <!--===========================Pico===========================-->
+    <!--===========================start===========================-->
+    <meta-data
+        android:name="pvr.sdk.version"
+        android:value="2.8.4.6" />
+    <meta-data
+        android:name="pvr.app.type"
+        android:value="vr" />
+    <meta-data
+        android:name="pvr.display.orientation"
+        android:value="180" />
+
+    <activity
+        android:name="com.unity3d.player.UnityPlayerNativeActivityPico"
+        android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+        android:hardwareAccelerated="false"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:screenOrientation="landscape">
+
+      <!--<intent-filter>-->
+      <!--<action android:name="android.intent.action.MAIN" />-->
+
+      <!--<category android:name="android.intent.category.LAUNCHER" />-->
+      <!--<category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+      <!--</intent-filter>-->
+
+      <meta-data
+          android:name="unityplayer.UnityActivity"
+          android:value="true" />
+      <meta-data
+          android:name="unityplayer.ForwardNativeEventsToDalvik"
+          android:value="false" />
+
+    </activity>
+    <activity
+        android:name="com.pico.loginpaysdk.UnityAuthInterface"
+        android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+        android:screenOrientation="landscape"></activity>
+    <activity
+        android:name="com.pico.loginpaysdk.component.PicoSDKBrowser"
+        android:configChanges="keyboardHidden|orientation"
+        android:exported="false"
+        android:windowSoftInputMode="adjustResize"></activity>
+
+    <service android:name="com.picovr.picovrlib.PeriodicService"></service>
+    <service android:name="com.psmart.link.spp.LarkConnectService" />
+    <service android:name="com.psmart.link.ble.BluetoothLeService" />
+    <service android:name="com.picovr.hummingbirdsvc.AutoConnectService">
+      <intent-filter>
+        <action android:name="com.picovr.hummingbirdsvc.AutoConnectService" />
+      </intent-filter>
+    </service>
+    <service
+        android:name="com.picovr.picovrlib.hummingbird.HummingBirdControllerService"
+        android:process=":remote">
+      <intent-filter>
+        <action android:name="com.picovr.picovrlib.humingbird.HumingBirdAIDLService" />
+      </intent-filter>
+    </service>
+
+    <meta-data
+        android:name="pico_merchant_id"
+        android:value="81" />
+    <meta-data
+        android:name="pico_app_id"
+        android:value="5a189befeb3b33f7df101fbecffe4f98" />
+    <meta-data
+        android:name="pico_app_key"
+        android:value="25ba00fb73343ff1ec32e1c152fff291" />
+    <meta-data
+        android:name="pico_pay_key"
+        android:value="d828c5d3a1cc11e6b7fe008cfaf3d930" />
+    <meta-data
+        android:name="pico_redirectUrl"
+        android:value="http://www.picovr.com" />
+    <!--Scope of authorization-->
+    <meta-data
+        android:name="pico_scope"
+        android:value="get_user_info" />
+    <meta-data
+        android:name="com.pvr.instructionset"
+        android:value="32" />
+    <!--Whether the platform animation is displayed.-->
+    <meta-data
+        android:name="platform_logo"
+        android:value="1" />
+    <!--<meta-data android:name="LoadingContent" android:value="@string/loading" />-->
+    <meta-data
+        android:name="LoadingContent"
+        android:resource="@string/app_name" />
+    <meta-data
+        android:name="loadingcolor"
+        android:resource="@color/blue" />
+    <meta-data
+        android:name="loadingtextsize"
+        android:value="20" />
+    <meta-data
+        android:name="loadingwidth"
+        android:value="500" />
+    <!--loadingtext width-->
+    <meta-data
+        android:name="loadingheight"
+        android:value="100" />
+    <!--loadingtext height-->
+    <meta-data
+        android:name="loadingmarquee"
+        android:value="1" />
+    <!--0 no marquee 1 marquee-->
+    <meta-data
+        android:name="bottommargin"
+        android:value="100" />
+    <meta-data
+        android:name="marqueecount"
+        android:value="10" />
+    <meta-data
+        android:name="loadingalign"
+        android:value="mid" />
+    <meta-data
+        android:name="platform_high"
+        android:value="1" />
+    <meta-data
+        android:name="platform_sbf"
+        android:value="-1" />
+    <!--Set the Viewer platform msaa.-->
+    <meta-data
+        android:name="MSAA"
+        android:value="8" />
+    <meta-data
+        android:name="com.pvr.hmd.trackingmode"
+        android:value="6dof" />
+    <meta-data
+        android:name="isPUI"
+        android:value="0" />
+    <meta-data
+        android:name="enable_eyetracking"
+        android:value="0" />
+    <meta-data
+        android:name="unity.build-id"
+        android:value="0508a5ff-4178-40de-a250-c5c94dc57405" />
+    <meta-data
+        android:name="unity.splash-mode"
+        android:value="0" />
+    <meta-data
+        android:name="unity.splash-enable"
+        android:value="False" />
+    <!--===========================Pico===========================-->
+    <!--===========================end===========================-->
+
+    <!--===========================华为===========================-->
+    <!--===========================start===========================-->
+    <meta-data
+        android:name="com.huawei.android.vr.application.mode"
+        android:value="vr_only" />
+    <meta-data
+        android:name="com.huawei.android.vr.application.type"
+        android:value="game" />
+    <meta-data
+        android:name="android.max_aspect"
+        android:value="4.1" />
+
+    <activity
+        android:name="com.huawei.vrlab.HVRActivity"
+        android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:screenOrientation="landscape"
+        android:taskAffinity=":finishing">
+
+      <!--<intent-filter>-->
+      <!--<action android:name="android.intent.action.MAIN" />-->
+
+      <!--<category android:name="android.intent.category.LAUNCHER" />-->
+      <!--<category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+      <!--</intent-filter>-->
+
+      <intent-filter>
+        <action android:name="com.huawei.android.vr.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+
+      <meta-data
+          android:name="unityplayer.UnityActivity"
+          android:value="true" />
+      <meta-data
+          android:name="unityplayer.ForwardNativeEventsToDalvik"
+          android:value="false" />
+
+      <meta-data
+          android:name="unityplayer.SkipPermissionsDialog"
+          android:value="true" />
+    </activity>
+    <!--===========================华为===========================-->
+    <!--===========================end===========================-->
+
+    <!--===========================ViveWave===========================-->
+    <!--===========================start==============================-->
+    <activity
+        android:name="com.htc.vr.unity.WVRUnityVRActivity"
+        android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+        android:enableVrMode="com.htc.vr.core.server/com.htc.vr.core.server.VRListenerService"
+        android:hardwareAccelerated="false"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:screenOrientation="landscape">
+
+      <!--<intent-filter>-->
+      <!--<action android:name="android.intent.action.MAIN" />-->
+
+      <!--<category android:name="android.intent.category.LAUNCHER" />-->
+      <!--<category android:name="com.htc.intent.category.VRAPP" />-->
+      <!--<category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+      <!--</intent-filter>-->
+
+      <meta-data
+          android:name="unityplayer.UnityActivity"
+          android:value="true" />
+      <meta-data
+          android:name="unityplayer.SkipPermissionsDialog"
+          android:value="true" />
+    </activity>
+
+    <meta-data
+        android:name="com.htc.vr.content.NumDoFHmd"
+        android:value="3,6DoF" />
+    <meta-data
+        android:name="com.htc.vr.content.NumDoFController"
+        android:value="3,6DoF" />
+    <meta-data
+        android:name="com.htc.vr.content.NumController"
+        android:value="1,2" />
+    <!--===========================ViveWave===========================-->
+    <!--===========================end================================-->
+
+    <!--===========================nolo===============================-->
+    <!--===========================start==============================-->
+    <meta-data
+        android:name="NibiruVRVersion"
+        android:value="2" />
+    <activity
+        android:name="com.nibiru.lib.xr.unity.NibiruXRUnityActivity"
+        android:alwaysRetainTaskState="true"
+        android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+        android:hardwareAccelerated="false"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:screenOrientation="landscape"
+        android:windowSoftInputMode="adjustPan">
+
+
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="com.google.intent.category.CARDBOARD" />
+        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+        <category android:name="com.nibiru.intent.category.NVR" />
+        <category android:name="com.nibiru.intent.category.STUDIO" />
+      </intent-filter>
+
+      <intent-filter>
+        <action android:name="android.intent.action.NOLOHOME" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+
+      <meta-data
+          android:name="unityplayer.UnityActivity"
+          android:value="true" />
+    </activity>
+
+    <service
+        android:name="com.nibiru.lib.vr.listener.NVRVrListener"
+        android:permission="android.permission.BIND_VR_LISTENER_SERVICE">
+      <intent-filter>
+        <action android:name="android.service.vr.VrListenerService" />
+      </intent-filter>
+    </service>
+
+    <meta-data
+        android:name="NIBIRU_UNITY_VIEWER_NAME"
+        android:value="NvrViewerMain" />
+
+    <!--===========================nolo===============================-->
+    <!--===========================end================================-->
+
+  </application>
+
+  <!--===================Pico、ViveWave、nolo=====================-->
+  <!--===========================start===========================-->
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-feature
+      android:name="android.hardware.touchscreen"
+      android:required="false" />
+  <uses-feature
+      android:name="android.hardware.touchscreen.multitouch"
+      android:required="false" />
+  <uses-feature
+      android:name="android.hardware.touchscreen.multitouch.distinct"
+      android:required="false" />
+  <!--=====================Pico、ViveWave、nolo=================-->
+  <!--===========================end===========================-->
+
+  <!--===========================nolo===============================-->
+  <!--===========================start==============================-->
+  <uses-feature
+      android:name="android.hardware.sensor.accelerometer"
+      android:required="true" />
+  <uses-feature
+      android:name="android.hardware.sensor.gyroscope"
+      android:required="true" />
+  <uses-feature
+      android:name="android.software.vr.mode"
+      android:required="false" />
+  <uses-feature
+      android:name="android.hardware.vr.high_performance"
+      android:required="false" />
+  <!--===========================nolo===============================-->
+  <!--===========================end================================-->
+
+</manifest>

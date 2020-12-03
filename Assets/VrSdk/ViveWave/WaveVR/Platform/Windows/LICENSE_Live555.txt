@@ -1,0 +1,9 @@
+Source code license
+This code (Live555) is "open source", and is released under the LGPL. This allows you to use these libraries (via linking) inside closed-source products.
+It also allows you to make closed-source binary extensions to these libraries - for instance, to support proprietary media codecs that subclass the existing "liveMedia" class hierarchy.
+Nonetheless, we hope that subclass extensions of these libraries will also be developed under the LGPL, and contributed for inclusion here.
+
+We encourage developers to contribute to the development and enhancement of these libraries. 
+
+http://www.live555.com/liveMedia/#license
+
