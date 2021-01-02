@@ -24,3 +24,5 @@ Nolo设备
 如有集成使用问题，请加QQ群：441096720
 
 SDK unitypackage资源包下载地址：https://pan.baidu.com/s/1VppKqcS-64_THsR45S8E7g  密码:g692
+
+持续更新中...
