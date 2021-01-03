@@ -21,7 +21,7 @@ Nolo设备
 
 开发者还可根据具体的设备vr sdk的开发文档进行其他功能的开发.
 
-如有集成使用问题，请加QQ群：441096720
+如有集成使用问题，请加QQ：1819615163
 
 SDK unitypackage资源包下载地址：https://pan.baidu.com/s/1VppKqcS-64_THsR45S8E7g  密码:g692
 
